@@ -23,7 +23,7 @@ jobs:
 
       - name: Build Opus.lib
         run: |
-          cmake --build build --config Release --target opus
+          cmake --build build --config MinSizeRel --target opus
 
       - name: Upload opus.lib as artifact
         uses: actions/upload-artifact@v4
